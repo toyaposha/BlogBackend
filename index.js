@@ -11,7 +11,7 @@ import checkAuth from './utils/checkAuth.js';
 import * as UserController from './controllers/userController.js';
 import * as PostController from './controllers/PostController.js';
 
-mongoose.connect('mongodb+srv://admin:Toma030429@cluster0.n2gshfo.mongodb.net/blog?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGODB_URL)
 .then(() => console.log('DB ok'))
 .catch(err => console.log('DB not OK', err));
 
