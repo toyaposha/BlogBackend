@@ -9,7 +9,7 @@ import User from './models/User.js';
 import checkAuth from './utils/checkAuth.js';
 
 import * as UserController from './controllers/userController.js';
-import * as PostController from './controllers/PostController.js';
+import * as PostController from './controllers/postController.js';
 
 mongoose.connect(process.env.MONGODB_URL)
 .then(() => console.log('DB ok'))
